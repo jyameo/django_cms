@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'tictactoe.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'djangodb',
+        'USER': 'pycharm',
+        'PASSWORD': '',
+        'HOST': '35.203.85.223', # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'PORT': '3306'
     }
 }
 
