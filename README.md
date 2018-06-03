@@ -1,1 +1,1 @@
-# django_cms
+# django cms application
